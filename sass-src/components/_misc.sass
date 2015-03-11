@@ -1,0 +1,20 @@
+//# Flexbox - part from my grid
+
+.mod-flexbox
+	+grid-flex-display()
+	+grid-flex(0 1 auto)
+	+grid-flex-direction(row)
+	+grid-flex-wrap(wrap)
+
+.flexbox-element
+	+grid-flex-display()
+	+grid-flex(0 1 auto)
+	+grid-flex-direction(column)
+	+grid-flex-grow(0)
+	+grid-flex-shrink(0)
+	max-width: 100%
+	width: 100%
+
++at-breakpoint(xs)
+	.flexbox-element + .flexbox-element
+		+grid-order(-1)

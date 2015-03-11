@@ -39,18 +39,20 @@ footer
 	color: $brand-text-contrast
 
 	.form-control
-		margin-bottom: 45px
+		margin-bottom: 25px
 
 	+at-breakpoint(xs)
 		padding-top: 60px
 		padding-bottom: 50px
 
 		.form-control
-			margin-bottom: 25px
+			margin-top: 25px
+			margin-bottom: 0
 
-	+at-breakpoint(xs)
 		h2.h1
-			font-size: $font-size-h2-xs
+			font-size: $font-size-h2-xs //overwrite desktop
+
+
 
 .banner
 	text-align: center

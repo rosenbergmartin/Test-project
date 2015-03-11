@@ -1,0 +1,122 @@
+
+// - Parent
+@mixin grid-flex-display()
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+
+@mixin grid-flex-wrap($flex)
+	-webkit-flex-wrap: $flex
+	-ms-flex-wrap: $flex
+	flex-wrap: $flex
+
+@mixin grid-flex-direction($flex)
+	@if $flex == row
+		-webkit-box-orient: horizontal
+		-webkit-box-direction: normal
+
+	@if $flex == column
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+
+	@if $flex == row-reverse
+		-webkit-box-orient: horizontal
+		-webkit-box-direction: reverse
+
+	@if $flex == column-reverse
+		-webkit-box-orient: vertical
+		-webkit-box-direction: reverse
+
+	-webkit-flex-direction: $flex
+	-ms-flex-direction: $flex
+	flex-direction: $flex
+
+@mixin grid-justify-content($flex)
+	@if $flex == flex-start
+		-webkit-box-pack: start
+		-ms-flex-pack: start
+
+	@if $flex == center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+
+	@if $flex == flex-end
+		-webkit-box-pack: end
+		-ms-flex-pack: end
+
+	@if $flex == space-around
+		-ms-flex-pack: distribute
+
+	@if $flex == space-between
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify	
+
+	-webkit-justify-content: $flex
+	justify-content: $flex
+
+@mixin grid-align-items($flex)
+	@if $flex == flex-start
+		-webkit-box-align: start
+		-ms-flex-align: start
+
+	@if $flex == center
+		-webkit-box-align: center
+		-ms-flex-align: center
+
+	@if $flex == flex-end
+		-webkit-box-align: end
+		-ms-flex-align: end
+
+	-webkit-align-items: $flex
+	align-items: $flex
+
+// - Child
+@mixin grid-flex($flex)
+	-webkit-box-flex: $flex
+	-webkit-flex: $flex
+	-ms-flex: $flex
+	flex: $flex
+
+@mixin grid-align-self($flex)
+	-webkit-align-self: $flex
+	align-self: $flex
+
+	@if $flex == center
+		-ms-flex-item-align: center
+
+	@if $flex == flex-start
+		-ms-flex-item-align: start
+
+	@if $flex == flex-end
+		-ms-flex-item-align: end
+
+@mixin grid-flex-grow($flex)
+	-webkit-box-flex: $flex
+	-webkit-flex-grow: $flex
+	-ms-flex-positive: $flex
+	flex-grow: $flex
+
+@mixin grid-flex-shrink($flex)
+	-webkit-flex-shrink: $flex
+	-ms-flex-negative: $flex
+	flex-shrink: $flex
+
+@mixin grid-flex-basis($flex)
+	-webkit-flex-basis: $flex
+	-ms-flex-preferred-size: $flex
+	flex-basis: $flex
+
+@mixin grid-order($flex)	
+	@if $flex == 1
+		-webkit-box-ordinal-group: 2
+
+	@if $flex == 0
+		-webkit-box-ordinal-group: 1
+	
+	@if $flex == -1
+		-webkit-box-ordinal-group: 0
+
+	-webkit-order: $flex
+	-ms-flex-order: $flex
+	order: $flex

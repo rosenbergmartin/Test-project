@@ -14,7 +14,6 @@
 		padding-right: $container-padding-xs
 		padding-left: $container-padding-xs
 
-
 .row
 	margin: 0 ($grid-gutter-width / -2)
 
@@ -26,6 +25,12 @@
 		clear: both
 		height: 0
 
+.row-flex
+	+box-sizing(border-box)
+	+grid-flex-display()
+	+grid-flex(0 1 auto)
+	+grid-flex-direction(row)
+	+grid-flex-wrap(wrap)
 
 [class^="col-"]
 	float: left
@@ -68,3 +73,4 @@
 			width: percentage(($i / $grid-columns))
 		.col-lg-auto
 			width: 0
+
