@@ -1,0 +1,9 @@
+$image-path: '../images' !default
+$fallback-extension: 'png' !default
+$retina-suffix: '@2x'
+
+=abs-background-image($name)
+	background-image: url(#{$image-path}/#{$name}.svg)
+
+	.no-svg &
+		background-image: url(#{$image-path}/#{$name}.#{$fallback-extension})

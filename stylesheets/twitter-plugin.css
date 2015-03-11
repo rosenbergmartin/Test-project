@@ -1,0 +1,175 @@
+@import url(http://fonts.googleapis.com/css?family=Cantarell:400,700,700italic|Fjalla+One|Rochester);
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 5px 0; }
+
+.text-special {
+  font-family: "Rochester", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400; }
+
+.subhead {
+  font-family: "Rochester", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #262221;
+  font-weight: 400; }
+
+.description {
+  color: #00baf0; }
+
+.code {
+  color: #f0746a;
+  font-size: 14px;
+  font-weight: bold; }
+
+.underline {
+  display: inline;
+  border-bottom: 1px solid #cccccc; }
+
+.text-quote {
+  color: #383131; }
+
+.text-theme {
+  color: #e74c3c; }
+
+.twitter {
+  margin-bottom: -10px;
+  padding-bottom: 20px;
+  background-image: url("../images/twitter-feed.jpg");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  min-height: 295px; }
+
+.module-twitter {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  text-align: center; }
+
+.twitter-timeline {
+  height: 250px; }
+
+.twitter-load {
+  padding-top: 120px; }
+
+.timeline,
+.var-static {
+  background-color: transparent;
+  border: none; }
+  .timeline .timeline-header,
+  .var-static .timeline-header {
+    padding: 20px 0 0 0;
+    margin: 0 20px;
+    position: static;
+    border-color: #dedede; }
+    .timeline .timeline-header .summary,
+    .var-static .timeline-header .summary {
+      display: none; }
+    .timeline .timeline-header .follow-button,
+    .timeline .timeline-header .twitter-follows,
+    .var-static .timeline-header .follow-button,
+    .var-static .timeline-header .twitter-follows {
+      font-size: 12px;
+      font-size: 0.75rem;
+      display: inline-block;
+      padding: 5px 25px;
+      position: absolute;
+      z-index: 100;
+      top: 215px;
+      right: 20px;
+      line-height: 100%;
+      text-shadow: none;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .timeline .timeline-header .twitter-follows,
+    .var-static .timeline-header .twitter-follows {
+      right: 140px;
+      background-image: none;
+      background-color: #e8e6e6;
+      color: #2f2f2f; }
+    .timeline .timeline-header a.follow-button,
+    .var-static .timeline-header a.follow-button {
+      border-radius: 0;
+      background-image: none;
+      border: none;
+      background-color: black;
+      color: #e9e000;
+      text-shadow: none;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .timeline .timeline-header .ic-button-bird,
+    .var-static .timeline-header .ic-button-bird {
+      display: none; }
+  .timeline .stream,
+  .var-static .stream {
+    height: auto;
+    border: none;
+    overflow-y: hidden; }
+  .timeline .h-feed,
+  .var-static .h-feed {
+    height: 170px;
+    overflow: hidden; }
+  .timeline .tweet,
+  .var-static .tweet {
+    width: 80%;
+    padding: 20px;
+    border: none;
+    margin: 0 auto; }
+    .timeline .tweet .header,
+    .var-static .tweet .header {
+      display: none; }
+    .timeline .tweet .profile,
+    .var-static .tweet .profile {
+      display: none; }
+    .timeline .tweet .e-entry-title,
+    .var-static .tweet .e-entry-title {
+      text-shadow: 1px 1px #dedede;
+      font-size: 26px;
+      font-size: 1.625rem;
+      color: #5c5c5c;
+      line-height: 140%;
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      overflow: visible;
+      text-align: center; }
+      .timeline .tweet .e-entry-title a,
+      .var-static .tweet .e-entry-title a {
+        color: #e74c3c; }
+    .timeline .tweet .retweet-credit,
+    .var-static .tweet .retweet-credit {
+      display: none; }
+    .timeline .tweet .footer,
+    .var-static .tweet .footer {
+      padding: 0; }
+      .timeline .tweet .footer .expand,
+      .var-static .tweet .footer .expand {
+        display: none; }
+      .timeline .tweet .footer .tweet-actions,
+      .var-static .tweet .footer .tweet-actions {
+        display: none; }
+  .timeline .inline-media,
+  .var-static .inline-media {
+    display: none; }
+  .timeline .timeline-footer,
+  .var-static .timeline-footer {
+    padding: 20px 0 0 0;
+    margin: 0 20px;
+    position: static;
+    background-color: transparent;
+    border-top: 1px solid #dedede; }
+    .timeline .timeline-footer .tweet-box-button,
+    .var-static .timeline-footer .tweet-box-button {
+      display: none; }

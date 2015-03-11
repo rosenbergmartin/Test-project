@@ -1,0 +1,23 @@
+.btn-primary
+	+transition(all ease-in-out 0.2s)
+	+box-sizing(border-box)
+	+border-radius($border-radius)
+	display: inline-block
+	font-size: 15px
+	padding: 0 35px
+	min-height: 46px
+	line-height: 46px
+	background-color: $brand-primary
+	color: $brand-text-contrast
+	text-decoration: none
+
+	&:hover
+		+transition(all ease-in-out 0.2s)
+		background-color: $brand-primary-action
+
+
+	+at-breakpoint(xs)
+		padding: 0 13px
+		min-height: 40px
+		line-height: 40px
+

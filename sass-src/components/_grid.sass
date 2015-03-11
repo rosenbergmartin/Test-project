@@ -1,0 +1,70 @@
+// Grid row
+=container
+	max-width: $container-width - (2*$container-padding)
+	margin: auto
+	padding-right: $container-padding
+	padding-left: $container-padding
+
+.container 
+	+container
+
+	+at-breakpoint(xs)
+		width: auto
+		max-width: 100%
+		padding-right: $container-padding-xs
+		padding-left: $container-padding-xs
+
+
+.row
+	margin: 0 ($grid-gutter-width / -2)
+
+	&:after
+		content: " "
+		visibility: hidden
+		display: block
+		font-size: 0
+		clear: both
+		height: 0
+
+
+[class^="col-"]
+	float: left
+	padding-left: $grid-gutter-width / 2
+	padding-right: $grid-gutter-width / 2
+	+box-sizing(border-box)
+
+.col-indent
+	padding: 0
+
+	+at-breakpoint(xs)
+		padding: 0 30px
+
+@for $i from 1 through $grid-columns
+	.col-xs-#{$i}
+		width: percentage(($i / $grid-columns))
+	.col-xs-auto
+		width: 0
+
+//SM
+@media only screen and (min-width: $screen-sm)
+	@for $i from 1 through $grid-columns
+		.col-sm-#{$i}
+			width: percentage(($i / $grid-columns))
+		.col-sm-auto
+			width: 0
+
+//MD
+@media only screen and (min-width: $screen-md)
+	@for $i from 1 through $grid-columns
+		.col-md-#{$i}
+			width: percentage(($i / $grid-columns))
+		.col-md-auto
+			width: 0
+
+//LG
+@media only screen and (min-width: $screen-lg)
+	@for $i from 1 through $grid-columns
+		.col-lg-#{$i}
+			width: percentage(($i / $grid-columns))
+		.col-lg-auto
+			width: 0

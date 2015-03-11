@@ -1,0 +1,93 @@
+body
+	margin: 0
+	overflow-x: hidden
+
+header
+	background-image: url("../images/banner@2x.jpg")
+	background-size: cover
+	background-position: 0 100%
+	background-repeat: no-repeat
+	position: relative
+	min-height: 645px
+	background-color: #ccc
+
+	h1.h3
+		padding: 0
+		max-width: 700px
+		margin: 25px auto
+		color: $brand-text-contrast
+
+	.btn-primary,
+	.controls .form-control
+		font-size: 16px
+
+	+at-breakpoint(xs)
+		min-height: 560px
+		background-position: 20% 100%
+
+		.h3
+			font-size: 21px // :(
+
+		.btn-primary,
+		.controls .form-control
+			font-size: 14px
+
+footer
+	padding-top: 125px
+	padding-bottom: 75px
+	background-color: #243139
+	color: $brand-text-contrast
+
+	.form-control
+		margin-bottom: 45px
+
+	+at-breakpoint(xs)
+		padding-top: 60px
+		padding-bottom: 50px
+
+		.form-control
+			margin-bottom: 25px
+
+	+at-breakpoint(xs)
+		h2.h1
+			font-size: $font-size-h2-xs
+
+.banner
+	text-align: center
+
+.wrapper
+	padding: $spacing-base inherit
+
+	+at-breakpoint(xs)
+		padding: $spacing-base-xs inherit
+
+.wrapper-hightlight-primary
+	padding-top: 105px
+	padding-bottom: 125px
+	background-color: $brand-primary
+	color: $brand-text-contrast
+
+	+at-breakpoint(xs)
+		padding-top: 50px
+		padding-bottom: 65px
+
+.wrapper-hightlight-secondary
+	background-color: #f6f9fa
+	overflow-y: hidden
+
+
+.content-layout
+	text-align: center
+
++at-breakpoint(xs)
+	.content-layout-reset-xs
+		text-align: left
+
+.content-aside
+	text-align: right
+
+.content-push
+	margin-top: 35px
+
+.pull-right
+	float: right

@@ -1,0 +1,65 @@
+html
+	font-family: $font-family-base
+	-webkit-font-smoothing: antialiased
+	font-weight: $font-family-weigth
+	font-size: $font-size-base
+
+	+at-breakpoint(xs)
+		font-size: $font-size-base-xs
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
+	margin-top: 0
+
+h1,
+.h1
+	font-size: $font-size-h1
+	font-weight: normal !important
+
+h2,
+.h2
+	font-size: $font-size-h2
+	font-weight: bold
+
+	+at-breakpoint(xs)
+		font-size: $font-size-h2-xs
+
+h3,
+.h3
+	font-size: $font-size-h3
+	font-weight: bold
+
+h4,
+.h4
+	font-size: $font-size-h4
+
+h5,
+.h5
+	font-size: $font-size-h5
+
+h6,
+.h6
+	font-size: $font-size-h6
+
+.text-subheaded
+	margin-bottom: 12px
+
+p
+	max-width: 700px
+	margin: 0 auto
+	line-height: 1.9em
+	font-weight: 300
+
+	+at-breakpoint(xs)
+		line-height: 1.7em
+
+.text-emphasized
+	font-size: $font-size-emphasized
+
+	+at-breakpoint(xs)
+		font-size: $font-size-base-xs
+
+.text-utility
+	font-size: $font-size-utility
+
+.text-bold
+	font-weight: bold

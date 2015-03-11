@@ -1,0 +1,32 @@
+$local-border-radius: $border-radius
+
+.controls
+	.form-control
+		+border-radius($local-border-radius)
+		+box-sizing(border-box)
+		font-family: $font-family-base
+		padding: 0 25px 0 25px
+		min-width: 330px
+		min-height: 46px
+		line-height: 46px
+		font-size: 15px
+		border: none
+		outline: none
+
+		+input-placeholder
+			color: #8d9ea4
+
+		+at-breakpoint(xs)
+			padding: 0 12px 0 12px
+			min-width: 0
+			min-height: 40px
+			line-height: 40px
+			
+	&.control-with-btn
+		.form-control
+			+border-radius($local-border-radius 0 0 $local-border-radius)
+
+		.form-control + .btn-primary
+			+border-radius(0 $local-border-radius $local-border-radius 0)
+
+
