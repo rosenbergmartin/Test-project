@@ -5,6 +5,7 @@ $local-nav-link-color-support: $brand-primary
 $local-nav-font-size: 15px
 $local-nav-font-size-fixed: 14px
 //definition of fixed container below
+
 .nav-container 
 	+transition(all ease-in 0.2s)
 	position: absolute
@@ -34,33 +35,31 @@ $local-nav-font-size-fixed: 14px
 		&:last-child
 			margin-right: 0
 
-	a
-		display: inline-block
-		height: $local-nav-height
-		line-height: $local-nav-height
-		padding: 0 20px
-		text-decoration: none
-		color: $local-nav-link-color
-
-		&:after
-			+transition(all ease-in 0.2s)
-			content: ""
-			display: block
-			opacity: 0
-			position: absolute
-			left: 0
-			right: 0
-			bottom: 0
-			height: 5px
-			background-color: $local-nav-link-color-support	
-
-		&.active,	
-		&:hover
+		a
+			display: inline-block
+			height: $local-nav-height
+			line-height: $local-nav-height
+			padding: 0 20px
+			text-decoration: none
 			color: $local-nav-link-color
 
 			&:after
-				+transition(all ease-in 0.2s)
-				opacity: 1
+				content: ""
+				display: block
+				opacity: 0
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				height: 5px
+				background-color: $local-nav-link-color-support	
+
+			&.is-active,	
+			&:hover
+				color: $local-nav-link-color
+
+				&:after
+					opacity: 1
 
 	.nav-logo
 		+transition(opacity ease-in 0.2s)
@@ -83,12 +82,12 @@ $local-nav-font-size-fixed: 14px
 			width: 33.3%
 			margin: 0
 
-		a
-			width: 100%
-			padding: 0
+			a
+				width: 100%
+				padding: 0
 
-		.nav-logo
-			display: none
+			.nav-logo
+				display: none
 
 
 .nav-container.is-fixed
@@ -112,10 +111,10 @@ $local-nav-font-size-fixed: 14px
 		&:last-child
 			margin-right: 0
 
-	a
-		padding: 0 10px
-		height: $local-nav-height-fixed
-		line-height: $local-nav-height-fixed
+		a
+			padding: 0 10px
+			height: $local-nav-height-fixed
+			line-height: $local-nav-height-fixed
 
 	.nav-logo
 		+transition(opacity ease-in 0.2s)
@@ -133,10 +132,10 @@ $local-nav-font-size-fixed: 14px
 		li
 			margin: 0
 
-		a
-			padding: 0
-			height: $local-nav-height
-			line-height: $local-nav-height
+			a
+				padding: 0
+				height: $local-nav-height
+				line-height: $local-nav-height
 
 
 

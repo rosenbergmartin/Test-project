@@ -11,19 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/delete\/absolut-UI.coffee": {
-		"createSourceMap": 0,
-		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/delete\/absolut-UI.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/scripts\/custom\/absolut-UI.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
-		},
 	"\/email.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -724,17 +711,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/scripts\/custom\/absolut-UI.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/custom\/absolut-UI.js",
-		"outputAbbreviatedPath": "\/scripts\/custom\/min\/absolut-UI-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/scripts\/custom\/app.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -757,226 +733,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/scripts\/library\/codebase-headlines-plugin.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/codebase-headlines-plugin.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/min\/codebase-headlines-plugin-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
 	"\/scripts\/library\/dragdealer.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scripts\/library\/dragdealer.js",
 		"outputAbbreviatedPath": "\/scripts\/library\/min\/dragdealer-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/fancybox-src\/fancybox_overlay.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1003,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/fancybox_overlay.png",
-		"outputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/fancybox_overlay.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/scripts\/library\/fancybox-src\/fancybox_sprite.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1362,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/fancybox_sprite.png",
-		"outputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/fancybox_sprite.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/scripts\/library\/fancybox-src\/fancybox_sprite@2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6553,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/fancybox_sprite@2x.png",
-		"outputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/fancybox_sprite@2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/scripts\/library\/fancybox-src\/helpers\/fancybox_buttons.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1080,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/fancybox_buttons.png",
-		"outputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/fancybox_buttons.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-buttons.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-buttons.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-buttons.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-buttons.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/min\/jquery.fancybox-buttons-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-media.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-media.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/min\/jquery.fancybox-media-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-thumbs.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-thumbs.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-thumbs.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/jquery.fancybox-thumbs.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/helpers\/min\/jquery.fancybox-thumbs-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/fancybox-src\/jquery.fancybox.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/jquery.fancybox.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/scripts\/library\/fancybox-src\/jquery.fancybox.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/jquery.fancybox.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/min\/jquery.fancybox-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/fancybox-src\/jquery.fancybox.pack.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/jquery.fancybox.pack.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/fancybox-src\/min\/jquery.fancybox.pack-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/jquery-ui-1.10.3.custom.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/jquery-ui-1.10.3.custom.min.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/min\/jquery-ui-1.10.3.custom.min-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/jquery-ui.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/jquery-ui.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/min\/jquery-ui-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/jquery.mb.YTPlayer.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/jquery.mb.YTPlayer.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/min\/jquery.mb.YTPlayer-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/jquery.mousewheel-3.0.6.pack.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/jquery.mousewheel-3.0.6.pack.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/min\/jquery.mousewheel-3.0.6.pack-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/jquery.stellar.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/jquery.stellar.min.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/min\/jquery.stellar.min-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/jquery.tubular.1.0.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/jquery.tubular.1.0.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/min\/jquery.tubular.1.0-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/library\/jquery.videoBG.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/jquery.videoBG.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/min\/jquery.videoBG-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1048,31 +810,11 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/scripts\/library\/waypoints.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/library\/waypoints.min.js",
-		"outputAbbreviatedPath": "\/scripts\/library\/min\/waypoints.min-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/stylesheets\/site.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/site.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/stylesheets\/twitter-plugin.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/stylesheets\/twitter-plugin.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1265,7 +1007,7 @@
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "console",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

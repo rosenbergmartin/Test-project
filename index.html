@@ -28,10 +28,10 @@
         </form>
       </div>
       <div data-nav-primary class="nav-container">
-        <nav role="navigation" class="nav-primary">
-          <div class="nav-logo"></div>
+        <nav role="navigation" class="nav-primary"><a href="#top">
+            <div class="nav-logo"></div></a>
           <ul role="menu">
-            <li role="menuitem"><a href="#about" class="active">About</a></li>
+            <li role="menuitem"><a href="#about">About</a></li>
             <li role="menuitem"><a href="#features">Features</a></li>
             <li role="menuitem"><a href="#sign-up">Sign up</a></li>
           </ul>
@@ -39,8 +39,8 @@
       </div>
     </header>
     <div role="main" class="content">
-      <section class="wrapper">
-        <div id="about" class="container">
+      <section id="about" data-section class="wrapper">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-5 col-indent">
               <div class="mod-about">
@@ -52,7 +52,7 @@
           </div>
         </div>
       </section>
-      <section class="wrapper-hightlight-primary">
+      <section id="features" data-section class="wrapper-hightlight-primary">
         <div class="container container-strict">
           <div class="row">
             <div class="col-xs-12 col-indent">
@@ -95,7 +95,7 @@
         </div>
       </section>
       <section class="wrapper">
-        <div id="features" class="container">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12 col-indent">
               <ul class="list-features">
@@ -119,7 +119,7 @@
           </div>
         </div>
       </section>
-      <footer id="sign-up" role="contentinfo">
+      <footer data-section id="sign-up" role="contentinfo">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
