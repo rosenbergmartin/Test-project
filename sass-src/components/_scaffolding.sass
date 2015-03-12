@@ -48,25 +48,40 @@ footer
 	color: $brand-text-contrast
 
 	.form
-		margin-bottom: 40px
+		margin-bottom: 40px	
 
-		+at-breakpoint(xs)
-			&.is-submitted
-				margin-bottom: 10px
+	.footer-note
+		text-align: center
 
 	+at-breakpoint(xs)
 		padding-top: 60px
 		padding-bottom: 50px
 
+		h2.h1
+			font-size: $font-size-h2-xs //overwrite desktop
+
 		.form.is-submitted
-			margin-top: 40px 
+			margin-top: 40px
+			margin-bottom: 20px 
+
+			.mod-share
+				position: relative
 
 		.controls
 			margin-top: 40px
 			margin-bottom: 0
 
-		h2.h1
-			font-size: $font-size-h2-xs //overwrite desktop
+		.mod-share
+			text-align: left
+			padding-left: $spacing-indent
+			padding-right: $spacing-indent
+
+		.footer-note,
+		.social-note
+			text-align: left
+
+		.footer-note
+			padding: 0 $spacing-indent
 
 .banner
 	text-align: center
@@ -91,8 +106,16 @@ footer
 	background-color: #f6f9fa
 	overflow-y: hidden
 
+	+at-breakpoint(sm)
+		padding-top: 50px
+		padding-bottom: 65px
+
 .content-layout
 	text-align: center
+
++at-breakpoint(sm)
+	.content-layout-sm
+		text-align: center
 
 +at-breakpoint(xs)
 	.content-layout-reset-xs
@@ -106,3 +129,20 @@ footer
 
 .pull-right
 	float: right
+
+.pull-left
+	float: left
+
+.hidden
+	display: none !important
+
+.visible-xs
+	display: none !important
+
++at-breakpoint(xs)
+	.hidden-xs
+		display: none !important
+
+	.visible-xs
+		display: block !important
+

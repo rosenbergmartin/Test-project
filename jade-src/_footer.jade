@@ -1,27 +1,23 @@
 footer(data-section)#sign-up(role="contentinfo")
 	div.container
 		div.row
+			div.col-xs-12.col-indent-xs
+				h2.h1.content-layout.content-layout-reset-xs Sign up for beta
+			
 			div.col-xs-12
-				h2.h1.content-layout Sign up for beta
+				p.footer-note.visible-xs Sign Up for beta right now and be one of the firsts. With Posli you fix your workflow and become more efficient.
+				form.form(data-form-submit, action="#")
+					div.controls.control-with-btn
+						input.form-control(type="email", name="email", data-form-email, required ,placeholder="Your email")
+						input(type="submit", value="Request", data-form-btn).btn-primary
 
-				div.mod-flexbox
-					div.flexbox-element
-						form.form(data-form-submit, action="#")
-							div.controls.control-with-btn
-								input.form-control(type="email", name="email", data-form-email, required ,placeholder="Your email")
-								input(type="submit", value="Request", data-form-btn).btn-primary
+					div.mod-share
+						p.share-note 
+							| You’ve signed up, we love you for that! Tell your friends about it. 
 
-							div.mod-share
-								p.note 
-									| You’ve signed up, we love you for that! 
-									br
-									| Tell your friends about it. 
+				p.footer-note.hidden-xs Sign Up for beta right now and be one of the firsts. With Posli you fix your workflow and become more efficient.
 
-					div.flexbox-element
-						div.col-indent
-							p.content-layout Sign Up for beta right now and be one of the firsts. With Posli you fix your workflow and become more efficient.
-
-			div.col-xs-12.col-indent
+			div.col-xs-12.col-indent-xs
 				ul.list-social
 					li Share on
 					li

@@ -34,11 +34,10 @@
 	padding-right: $grid-gutter-width / 2
 	+box-sizing(border-box)
 
-.col-indent
-	padding: 0
-
-	+at-breakpoint(xs)
-		padding: 0 30px
++at-breakpoint(xs)
+	.col-indent-xs
+		padding-left: $spacing-indent
+		padding-right: $spacing-indent
 
 @for $i from 1 through $grid-columns
 	.col-xs-#{$i}

@@ -3,6 +3,7 @@
 // Nav
 var isFixed = "is-fixed";
 var isActive = "is-active";
+var isHover = "is-hover";
 var $appNavPrimary = $("[data-nav-primary]");
 var $appNavPrimaryAnchors = $("[data-nav-primary] a");
 var appNavPriamaryTop = $appNavPrimary.offset().top;
@@ -28,10 +29,10 @@ var rosenbergApp = rosenbergApp || {};
 
 		appNav.init = function() {
 
-			$appNavPrimaryAnchors.click(function(){
-				$appNavPrimaryAnchors.removeClass("active");
-				$(this).addClass("active");
-			});
+			//$appNavPrimaryAnchors.click(function(){
+			//	$appNavPrimaryAnchors.removeClass("active");
+			//	$(this).addClass("active");
+			//});
 
 			$(window).scroll(function(){
 				if(appNavPriamaryTop - $(window).scrollTop() < 0){

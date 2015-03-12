@@ -116,12 +116,10 @@ p {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.col-indent {
-  padding: 0; }
-  @media only screen and (min-width: 0) and (max-width: 767px) {
-    .col-indent {
-      padding: 0 30px; } }
-
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .col-indent-xs {
+    padding-left: 30px;
+    padding-right: 30px; } }
 .col-xs-1 {
   width: 8.3333333333%; }
 
@@ -454,20 +452,31 @@ footer {
   color: #fff; }
   footer .form {
     margin-bottom: 40px; }
-    @media only screen and (min-width: 0) and (max-width: 767px) {
-      footer .form.is-submitted {
-        margin-bottom: 10px; } }
+  footer .footer-note {
+    text-align: center; }
   @media only screen and (min-width: 0) and (max-width: 767px) {
     footer {
       padding-top: 60px;
       padding-bottom: 50px; }
+      footer h2.h1 {
+        font-size: 21px; }
       footer .form.is-submitted {
-        margin-top: 40px; }
+        margin-top: 40px;
+        margin-bottom: 20px; }
+        footer .form.is-submitted .mod-share {
+          position: relative; }
       footer .controls {
         margin-top: 40px;
         margin-bottom: 0; }
-      footer h2.h1 {
-        font-size: 21px; } }
+      footer .mod-share {
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 30px; }
+      footer .footer-note,
+      footer .social-note {
+        text-align: left; }
+      footer .footer-note {
+        padding: 0 30px; } }
 
 .banner {
   text-align: center; }
@@ -491,10 +500,17 @@ footer {
 .wrapper-hightlight-secondary {
   background-color: #f6f9fa;
   overflow-y: hidden; }
+  @media only screen and (max-width: 991px) {
+    .wrapper-hightlight-secondary {
+      padding-top: 50px;
+      padding-bottom: 65px; } }
 
 .content-layout {
   text-align: center; }
 
+@media only screen and (max-width: 991px) {
+  .content-layout-sm {
+    text-align: center; } }
 @media only screen and (min-width: 0) and (max-width: 767px) {
   .content-layout-reset-xs {
     text-align: left; } }
@@ -507,6 +523,21 @@ footer {
 .pull-right {
   float: right; }
 
+.pull-left {
+  float: left; }
+
+.hidden {
+  display: none !important; }
+
+.visible-xs {
+  display: none !important; }
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; }
+
+  .visible-xs {
+    display: block !important; } }
 .media-laptop {
   width: 750px; }
   @media only screen and (min-width: 0) and (max-width: 767px) {
@@ -543,27 +574,20 @@ footer {
   opacity: 0;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   z-index: 5;
   text-align: center; }
   .mod-share a + a {
     margin-left: 10px; }
-  .mod-share .note {
+  .mod-share .share-note {
     padding: 10px 0 5px 0;
     font-size: 16px;
     line-height: 1.3em;
     color: rgba(255, 255, 255, 0.6); }
   @media only screen and (min-width: 0) and (max-width: 767px) {
-    .mod-share {
-      padding-top: 20px; }
-      .mod-share .note {
-        max-width: 250px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -60px;
-        font-size: 14px; } }
+    .mod-share .note {
+      font-size: 14px; } }
 
 .mod-about {
   margin-top: 100px; }
@@ -581,59 +605,6 @@ footer {
   @media only screen and (max-width: 991px) {
     .mod-tasks {
       margin-top: 50px; } }
-
-.mod-flexbox {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center; }
-
-.flexbox-element {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-align-self: center;
-  align-self: center;
-  -ms-flex-item-align: center;
-  max-width: 100%;
-  width: auto; }
-
-@media only screen and (min-width: 0) and (max-width: 767px) {
-  .flexbox-element + .flexbox-element {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: -1;
-    -ms-flex-order: -1;
-    order: -1; } }
-.no-flexbox .mod-flexbox {
-  display: block;
-  text-align: center; }
-.no-flexbox .flexbox-element {
-  display: inline-block; }
 
 .btn-primary {
   -moz-transition: all 0.2s ease-in-out;
@@ -782,6 +753,8 @@ footer {
         .nav-primary li a {
           width: 100%;
           padding: 0; }
+          .nav-primary li a:hover:after {
+            opacity: 0; }
         .nav-primary li .nav-logo {
           display: none; } }
 
@@ -831,6 +804,8 @@ footer {
           padding: 0;
           height: 70px;
           line-height: 70px; } }
+  .nav-container.is-fixed .nav-logo {
+    display: none; }
 
 .list-devices,
 .list-features {
@@ -1021,11 +996,14 @@ input[type="submit"] {
       -webkit-border-radius: 0;
       border-radius: 0 3px 3px 0; }
     @media only screen and (min-width: 0) and (max-width: 767px) {
-      .controls.control-with-btn .form-control {
-        max-width: 190px; } }
+      .controls.control-with-btn {
+        width: 100%; }
+        .controls.control-with-btn .form-control {
+          width: calc(100% - 77px); } }
 
 .form {
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 form.is-failed .controls {
   -moz-transition: opacity 0.2s ease-in-out;
@@ -1051,14 +1029,7 @@ form.is-failed .controls {
       color: #d9534f; }
 
 form.is-submitted .controls {
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  opacity: 0;
-  z-index: 5; }
-  form.is-submitted .controls .form-control {
-    text-indent: -999px; }
+  display: none; }
 form.is-submitted .mod-share {
   -moz-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;

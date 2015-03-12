@@ -53,11 +53,15 @@ input[type="submit"]
 			+border-radius(0 $local-controls-border-radius $local-controls-border-radius 0)
 
 		+at-breakpoint(xs)
+			width: 100%
+
 			.form-control
-				max-width: 190px
+				width: calc(100% - 77px)
+
 
 .form
 	position: relative
+	text-align: center
 
 form.is-failed
 	.controls
@@ -75,12 +79,7 @@ form.is-failed
 
 form.is-submitted
 	.controls
-		+transition(opacity ease-in-out 0.2s)
-		opacity: 0
-		z-index: 5
-
-		.form-control
-			text-indent: -999px
+		display: none
 
 	.mod-share
 		+transition(opacity ease-in-out 0.2s)

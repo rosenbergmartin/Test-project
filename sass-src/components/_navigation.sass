@@ -54,7 +54,7 @@ $local-nav-font-size-fixed: 14px
 				height: 5px
 				background-color: $local-nav-link-color-support	
 
-			&.is-active,	
+			&.is-active,
 			&:hover
 				color: $local-nav-link-color
 
@@ -85,6 +85,10 @@ $local-nav-font-size-fixed: 14px
 			a
 				width: 100%
 				padding: 0
+
+				&:hover
+					&:after
+						opacity: 0 //hide hover on mobile
 
 			.nav-logo
 				display: none
@@ -136,6 +140,9 @@ $local-nav-font-size-fixed: 14px
 				padding: 0
 				height: $local-nav-height
 				line-height: $local-nav-height
+
+	.nav-logo
+		display: none
 
 
 
