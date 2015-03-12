@@ -2,19 +2,29 @@
 
 .mod-flexbox
 	+grid-flex-display()
-	+grid-flex(0 1 auto)
 	+grid-flex-direction(row)
 	+grid-flex-wrap(wrap)
+	+grid-justify-content(center)
+
 
 .flexbox-element
 	+grid-flex-display()
-	+grid-flex(0 1 auto)
 	+grid-flex-direction(column)
 	+grid-flex-grow(0)
 	+grid-flex-shrink(0)
+	+grid-align-self(center)
 	max-width: 100%
-	width: 100%
+	width: auto
 
 +at-breakpoint(xs)
 	.flexbox-element + .flexbox-element
 		+grid-order(-1)
+
+// #IE9 fallback
+.no-flexbox
+	.mod-flexbox
+		display: block
+		text-align: center
+
+	.flexbox-element
+		display: inline-block

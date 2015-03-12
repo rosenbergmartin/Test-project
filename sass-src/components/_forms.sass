@@ -1,33 +1,52 @@
-$local-border-radius: $border-radius
+$local-controls-border-radius: $border-radius
+$local-controls-font-size: 15px
+
+input[type="submit"]
+	font-family: $font-family-base
+	border: 0
 
 .controls
 	.form-control
-		+border-radius($local-border-radius)
+		+border-radius($local-controls-border-radius)
 		+box-sizing(border-box)
 		font-family: $font-family-base
-		padding: 0 25px 0 25px
+		padding: 15px 25px 11px 25px
 		min-width: 330px
-		min-height: 46px
-		line-height: 46px
-		font-size: 15px
+		min-height: 45px
+		line-height: 1em
+		font-size: $local-controls-font-size
 		border: none
 		outline: none
 
 		+input-placeholder
+			line-height: 1
 			color: #8d9ea4
 
 		+at-breakpoint(xs)
-			padding: 0 12px 0 12px
+			padding: 0 10px 0 10px
 			min-width: 0
 			min-height: 40px
-			line-height: 40px
+			//line-height: 40px
 			
 	&.control-with-btn
+		max-width: 100%
+		display: inline-block
+
+		.form-control,
+		.btn-primary
+			float: left
+			margin-top: 0
+			margin-right: 0
+
 		.form-control
-			+border-radius($local-border-radius 0 0 $local-border-radius)
+			+border-radius($local-controls-border-radius 0 0 $local-controls-border-radius)
 
 		.form-control + .btn-primary
-			+border-radius(0 $local-border-radius $local-border-radius 0)
-			margin-left: -2px
+			margin: 0
+			+border-radius(0 $local-controls-border-radius $local-controls-border-radius 0)
+
+		+at-breakpoint(xs)
+			.form-control
+				max-width: 190px
 
 

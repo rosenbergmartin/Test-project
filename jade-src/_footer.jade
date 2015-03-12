@@ -6,10 +6,10 @@ footer#sign-up(role="contentinfo")
 
 				div.mod-flexbox
 					div.flexbox-element
-						div.content-layout
+						form(data-form-submit, action="#")
 							div.controls.control-with-btn
-								input.form-control(type="text", placeholder="Your email")
-								a.btn-primary(href="#") Request
+								input.form-control(type="email", name="email", data-form-email, required ,placeholder="Your email")
+								input(type="submit", value="Request", data-form-btn).btn-primary
 
 					div.flexbox-element
 						div.col-indent

@@ -14,9 +14,12 @@
     <header>
       <div class="container content-layout"><img src="images/logo@2x.png" alt="Posli logo" class="media-logo">
         <h1 class="h3">Posli, advanced team messaging with to-do functionality.</h1>
-        <div class="controls control-with-btn">
-          <input type="text" placeholder="Input Email for Beta" class="form-control"><a href="#" class="btn-primary">Request</a>
-        </div>
+        <form data-form-submit action="#">
+          <div class="controls control-with-btn">
+            <input type="email" name="email" data-form-email required placeholder="Input Email for Beta" class="form-control">
+            <input type="submit" value="Request" data-form-btn class="btn-primary">
+          </div>
+        </form>
       </div>
       <div data-nav-primary class="nav-container">
         <nav role="navigation" class="nav-primary">
@@ -30,7 +33,7 @@
       </div>
     </header>
     <div role="main" class="content">
-      <div class="wrapper">
+      <section class="wrapper">
         <div id="about" class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-5 col-indent">
@@ -42,9 +45,9 @@
             <div class="col-xs-12 col-sm-7"><img src="images/laptop@2x.png" alt="Laptop" class="media-laptop"></div>
           </div>
         </div>
-      </div>
-      <div class="wrapper-hightlight-primary">
-        <div class="container">
+      </section>
+      <section class="wrapper-hightlight-primary">
+        <div class="container container-strict">
           <div class="row">
             <div class="col-xs-12 col-indent">
               <h2 class="content-layout content-layout-reset-xs">Everywhere</h2>
@@ -71,8 +74,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="wrapper-hightlight-secondary">
+      </section>
+      <section class="wrapper-hightlight-secondary">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-md-5 pull-right col-indent">
@@ -84,8 +87,8 @@
             <div class="col-xs-12 col-md-7"><img src="images/device-iphone@2x.png" alt="iPhone device" class="media-iphone"></div>
           </div>
         </div>
-      </div>
-      <div class="wrapper">
+      </section>
+      <section class="wrapper">
         <div id="features" class="container">
           <div class="row">
             <div class="col-xs-12 col-indent">
@@ -109,7 +112,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <footer id="sign-up" role="contentinfo">
         <div class="container">
           <div class="row">
@@ -117,11 +120,12 @@
               <h2 class="h1 content-layout">Sign up for beta</h2>
               <div class="mod-flexbox">
                 <div class="flexbox-element">
-                  <div class="content-layout">
+                  <form data-form-submit action="#">
                     <div class="controls control-with-btn">
-                      <input type="text" placeholder="Your email" class="form-control"><a href="#" class="btn-primary">Request</a>
+                      <input type="email" name="email" data-form-email required placeholder="Your email" class="form-control">
+                      <input type="submit" value="Request" data-form-btn class="btn-primary">
                     </div>
-                  </div>
+                  </form>
                 </div>
                 <div class="flexbox-element">
                   <div class="col-indent">

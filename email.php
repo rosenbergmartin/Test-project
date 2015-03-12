@@ -1,11 +1,9 @@
 <?php
 
 $to = "rosenberg.martin@icloud.com";
-$subject = "Portfolio contact form";
+$subject = "Sign for Beta";
 
-$txt = "Name: " .$_POST["name"] . "\nEmail: " . $_POST["email"] . "\nMessage: \n" . $_POST["message"];
-//$txt = $_POST["email"];
-//$txt = $_POST["message"];
+$txt = $_POST["email"];
 
 $headers = "From: noreply@rosenbergmartin.net";
 

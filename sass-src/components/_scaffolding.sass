@@ -1,6 +1,9 @@
+html,
 body
-	margin: 0
 	overflow-x: hidden
+
+body	
+	margin: 0
 
 header
 	background-image: url("../images/banner@2x.jpg")
@@ -38,30 +41,28 @@ footer
 	background-color: #243139
 	color: $brand-text-contrast
 
-	.form-control
-		margin-bottom: 25px
+	.control-with-btn
+		margin-bottom: 40px
 
 	+at-breakpoint(xs)
 		padding-top: 60px
 		padding-bottom: 50px
 
-		.form-control
-			margin-top: 25px
+		.control-with-btn
+			margin-top: 40px
 			margin-bottom: 0
 
 		h2.h1
 			font-size: $font-size-h2-xs //overwrite desktop
 
-
-
 .banner
 	text-align: center
 
 .wrapper
-	padding: $spacing-base inherit
+	padding: $spacing-base 0
 
 	+at-breakpoint(xs)
-		padding: $spacing-base-xs inherit
+		padding: $spacing-base-xs 0
 
 .wrapper-hightlight-primary
 	padding-top: 105px
@@ -76,7 +77,6 @@ footer
 .wrapper-hightlight-secondary
 	background-color: #f6f9fa
 	overflow-y: hidden
-
 
 .content-layout
 	text-align: center
