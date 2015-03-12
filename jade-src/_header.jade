@@ -3,10 +3,17 @@ header
 		img.media-logo(src="images/logo@2x.png", alt="Posli logo")
 		h1.h3 Posli, advanced team messaging with to-do functionality.
 
-		form(data-form-submit, action="#")
+		form.form(data-form-submit, action="#")
 			div.controls.control-with-btn
 				input.form-control(type="email", name="email", data-form-email, required ,placeholder="Input Email for Beta")
 				input(type="submit", value="Request", data-form-btn).btn-primary
+
+			div.mod-share
+				p.note 
+					| You’ve signed up, we love you for that! Tell your friends about it. 
+
+				a.btn-secondary(href="#") Link to Facebook
+				a.btn-primary(href="#") Link to Twitter
 
 	div.nav-container(data-nav-primary)
 		nav.nav-primary(role="navigation")

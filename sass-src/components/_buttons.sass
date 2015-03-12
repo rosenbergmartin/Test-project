@@ -1,4 +1,4 @@
-.btn-primary
+=btn-structure
 	+transition(all ease-in-out 0.2s)
 	+box-sizing(border-box)
 	+border-radius($border-radius)
@@ -7,17 +7,30 @@
 	padding: 15px 35px 14px 35px
 	min-height: 45px
 	line-height: 1em
-	background-color: $brand-primary
-	color: $brand-text-contrast
 	text-decoration: none
 	cursor: pointer
 
 	&:hover
 		+transition(all ease-in-out 0.2s)
-		background-color: $brand-primary-action
 
 	+at-breakpoint(xs)
 		padding: 13px 10px 12px 10px
 		min-height: 40px
-		//line-height: 40px
+
+.btn-primary
+	+btn-structure
+	background-color: $brand-primary
+	color: $brand-text-contrast
+
+	&:hover
+		background-color: $brand-primary-action
+
+.btn-secondary
+	+btn-structure
+	background-color: $brand-secondary
+	color: $brand-text-contrast
+
+	&:hover
+		background-color: $brand-secondary-action
+
 

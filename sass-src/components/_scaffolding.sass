@@ -17,12 +17,18 @@ header
 	h1.h3
 		padding: 0
 		max-width: 700px
-		margin: 25px auto
+		margin: 25px auto 0 auto
 		color: $brand-text-contrast
 
-	.btn-primary,
+	.form.is-submitted
+		margin-bottom: 40px 
+
+	[class^="btn-"],
 	.controls .form-control
 		font-size: 16px
+
+	.controls
+		margin-top: 25px
 
 	+at-breakpoint(xs)
 		min-height: 560px
@@ -31,7 +37,7 @@ header
 		.h3
 			font-size: 21px // :(
 
-		.btn-primary,
+		[class^="btn-"],
 		.controls .form-control
 			font-size: 14px
 
@@ -41,14 +47,21 @@ footer
 	background-color: #243139
 	color: $brand-text-contrast
 
-	.control-with-btn
+	.form
 		margin-bottom: 40px
+
+		+at-breakpoint(xs)
+			&.is-submitted
+				margin-bottom: 10px
 
 	+at-breakpoint(xs)
 		padding-top: 60px
 		padding-bottom: 50px
 
-		.control-with-btn
+		.form.is-submitted
+			margin-top: 40px 
+
+		.controls
 			margin-top: 40px
 			margin-bottom: 0
 

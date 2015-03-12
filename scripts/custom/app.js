@@ -10,6 +10,7 @@ var $appInDocLinks = $("[data-in-doc-link]"); //links routing inside document; n
 
 // Form
 var isSubmitted = "is-submitted";
+var isFailed = "is-failed";
 var $appFormSubmit = $("[data-form-submit]");
 var $appFormEmail = $("[data-form-email]");
 var $appFormBtn = $("[data-form-btn]");
@@ -73,7 +74,7 @@ var rosenbergApp = rosenbergApp || {};
 				    url: "email.php",
 				    data: data,
 				    success: function() {
-				    	console.log("Error")
+				    	console.log("Success")
 				    },
 				    error: function() {
 				    	console.log("Error")
@@ -81,13 +82,28 @@ var rosenbergApp = rosenbergApp || {};
 				  });
 				};
 
-        		// CS validation is simply based on HTML5; no Regex
+				var validate = function(emailString) {
+				    var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				    return re.test(emailString);
+				}
+
         		e.preventDefault()
-        		$(this).addClass(isSubmitted);
+        		var emailString = $(this).find($appFormEmail).val();
 
-        		// Here should be POST method to server, using mail function instead
-        		emailSend($(this).find($appFormEmail).val());
-
+        		if(validate(emailString)){
+        			// Simulating on mail function
+        			//emailSend(emailString);
+					$(this).addClass(isSubmitted);
+					$(this).removeClass(isFailed);
+					console.log("200")
+					console.log(emailString)
+        		}
+        		else
+        		{
+					$(this).addClass(isFailed);
+					console.log("500")
+        		}
+        		
         	})
         }; 
  
