@@ -1,0 +1,70 @@
+.clearfix
+	&:before,
+	&:after 
+		display: table
+		content: ""
+		line-height: 0
+
+	&:after 
+		clear: both
+
+.sr-only
+	position: absolute
+	width: 1px
+	height: 1px
+	padding: 0
+	margin: -1px
+	overflow: hidden
+	clip: rect(0,0,0,0)
+	border: 0
+
+.pull-right-xs
+	float: right
+
+.pull-left-xs
+	float: left
+
+.hidden-xs
+	display: none
+
+.visible-xs
+	display: block
+
+@media only screen and (min-width: $screen-sm)
+	.pull-right-sm
+		float: right
+
+	.pull-left-sm
+		float: left
+
+	.hidden-sm
+		display: none
+
+	.visible-sm
+		display: block
+
+@media only screen and (min-width: $screen-md)
+	.pull-right-md
+		float: right
+
+	.pull-left-md
+		float: left
+
+	.hidden-md
+		display: none
+
+	.visible-md
+		display: block
+
+@media only screen and (min-width: $screen-lg)
+	.pull-right-lg
+		float: right
+
+	.pull-left-lg
+		float: left
+
+	.hidden-lg
+		display: none
+
+	.visible-lg
+		display: block

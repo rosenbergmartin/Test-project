@@ -1,3 +1,11 @@
+*
+	+box-sizing(border-box)
+
+// Bootstrap grid overides
+.container-flexible,
+.row-flexible
+	overflow: visible
+
 html,
 body
 	overflow-x: hidden
@@ -41,16 +49,22 @@ header
 		.controls .form-control
 			font-size: 14px
 
+
+$local-footer-spacing: 40px
+
 footer
 	padding-top: 125px
 	padding-bottom: 75px
 	background-color: #243139
 	color: $brand-text-contrast
 
-	.form
-		margin-bottom: 40px	
+	h2,
+	.form.is-submitted
+		margin-bottom: $local-footer-spacing
 
 	.footer-note
+		margin-top: $local-footer-spacing
+		margin-bottom: $local-footer-spacing*2
 		text-align: center
 
 	+at-breakpoint(xs)
@@ -59,17 +73,11 @@ footer
 
 		h2.h1
 			font-size: $font-size-h2-xs //overwrite desktop
+			margin-bottom: $local-footer-spacing/2
 
+		.form,
 		.form.is-submitted
-			margin-top: 40px
-			margin-bottom: 20px 
-
-			.mod-share
-				position: relative
-
-		.controls
-			margin-top: 40px
-			margin-bottom: 0
+			margin-bottom: $local-footer-spacing/2
 
 		.mod-share
 			text-align: left
@@ -81,6 +89,8 @@ footer
 			text-align: left
 
 		.footer-note
+			margin-top: 0
+			margin-bottom: $local-footer-spacing/2
 			padding: 0 $spacing-indent
 
 .banner
@@ -108,7 +118,7 @@ footer
 
 	+at-breakpoint(sm)
 		padding-top: 50px
-		padding-bottom: 65px
+		padding-bottom: 0
 
 .content-layout
 	text-align: center
@@ -121,28 +131,18 @@ footer
 	.content-layout-reset-xs
 		text-align: left
 
+.content-indent
+	padding-left: $spacing-indent// not-specified
+	padding-right: $spacing-indent// not-specified
+
++at-breakpoint(xs)
+	.content-indent-xs
+		padding-left: $spacing-indent
+		padding-right: $spacing-indent
+
 .content-aside
 	text-align: right
 
 .content-push
 	margin-top: 35px
-
-.pull-right
-	float: right
-
-.pull-left
-	float: left
-
-.hidden
-	display: none !important
-
-.visible-xs
-	display: none !important
-
-+at-breakpoint(xs)
-	.hidden-xs
-		display: none !important
-
-	.visible-xs
-		display: block !important
 

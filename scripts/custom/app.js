@@ -3,7 +3,6 @@
 // Nav
 var isFixed = "is-fixed";
 var isActive = "is-active";
-var isHover = "is-hover";
 var $appNavPrimary = $("[data-nav-primary]");
 var $appNavPrimaryAnchors = $("[data-nav-primary] a");
 var appNavPriamaryTop = $appNavPrimary.offset().top;
@@ -115,9 +114,6 @@ var rosenbergApp = rosenbergApp || {};
 
 	(function(appActiveSection){
 		appActiveSection.init = function(){
-
-
-
 			$(window).scroll(function() {
 				var scrollFromTop = $(window).scrollTop();
 
@@ -138,6 +134,20 @@ var rosenbergApp = rosenbergApp || {};
 
 	}(rosenbergApp.appActiveSection));
 
+	rosenbergApp.appDrag = rosenbergApp.appDrag || {};
+
+	(function(appDrag){
+		appDrag.init = function(){
+			console.log($("[data-drag]"));
+			new Dragdealer('jsDrag', {
+			  steps: 3,
+			  speed: 0.2,
+			  loose: true
+			});
+		};
+
+	}(rosenbergApp.appDrag));
+
 } (rosenbergApp));
 
 $(document).ready(function(){
@@ -145,5 +155,6 @@ $(document).ready(function(){
 	rosenbergApp.appScroll.init();
 	rosenbergApp.appSubmit.init();
 	rosenbergApp.appActiveSection.init();
+	rosenbergApp.appDrag.init();
 });
 

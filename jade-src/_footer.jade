@@ -1,11 +1,14 @@
 footer(data-section)#sign-up(role="contentinfo")
 	div.container
 		div.row
-			div.col-xs-12.col-indent-xs
-				h2.h1.content-layout.content-layout-reset-xs Sign up for beta
-			
 			div.col-xs-12
-				p.footer-note.visible-xs Sign Up for beta right now and be one of the firsts. With Posli you fix your workflow and become more efficient.
+				div.content-indent-xs.content-layout.content-layout-reset-xs
+					h2.h1 Sign up for beta
+
+			div.col-xs-12.hidden-sm
+				p.footer-note Sign Up for beta right now and be one of the firsts. With Posli you fix your workflow and become more efficient.
+
+			div.col-xs-12
 				form.form(data-form-submit, action="#")
 					div.controls.control-with-btn
 						input.form-control(type="email", name="email", data-form-email, required ,placeholder="Your email")
@@ -15,7 +18,8 @@ footer(data-section)#sign-up(role="contentinfo")
 						p.share-note 
 							| You’ve signed up, we love you for that! Tell your friends about it. 
 
-				p.footer-note.hidden-xs Sign Up for beta right now and be one of the firsts. With Posli you fix your workflow and become more efficient.
+			div.col-xs-12.hidden-xs.visible-sm
+				p.footer-note Sign Up for beta right now and be one of the firsts. With Posli you fix your workflow and become more efficient.
 
 			div.col-xs-12.col-indent-xs
 				ul.list-social

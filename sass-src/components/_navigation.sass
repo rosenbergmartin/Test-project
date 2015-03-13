@@ -15,7 +15,17 @@ $local-nav-font-size-fixed: 14px
 	background: rgba(#000, 0.5)
 
 .nav-primary
-	+container
+	+container-fixed
+
+	@media (min-width: $screen-sm-min)
+		width: $container-sm
+
+	@media (min-width: $screen-md-min)
+		width: $container-md
+
+	@media (min-width: $screen-lg-min)
+		width: $container-lg
+
 	text-align: center
 
 	ul
@@ -55,7 +65,7 @@ $local-nav-font-size-fixed: 14px
 				background-color: $local-nav-link-color-support	
 
 			&.is-active,
-			&:hover
+			.no-touch &:hover
 				color: $local-nav-link-color
 
 				&:after
@@ -86,10 +96,6 @@ $local-nav-font-size-fixed: 14px
 				width: 100%
 				padding: 0
 
-				&:hover
-					&:after
-						opacity: 0 //hide hover on mobile
-
 			.nav-logo
 				display: none
 
@@ -100,6 +106,7 @@ $local-nav-font-size-fixed: 14px
 	position: fixed
 	top: 0
 	bottom: auto
+	z-index: 999
 
 	ul
 		+transition(all ease-in 0.2s)
