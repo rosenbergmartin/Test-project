@@ -138,7 +138,6 @@ var rosenbergApp = rosenbergApp || {};
 
 	(function(appDrag){
 		appDrag.init = function(){
-			console.log($("[data-drag]"));
 			new Dragdealer('jsDrag', {
 			  steps: 3,
 			  speed: 0.2,
