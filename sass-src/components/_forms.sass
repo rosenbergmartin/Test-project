@@ -8,6 +8,33 @@ input[type="submit"]
 	border-radius: 0
 	border: 0
 
+.form
+	position: relative
+	text-align: center
+
+form.is-failed
+	.controls
+		+transition(opacity ease-in-out 0.2s)
+		opacity: 1
+		z-index: 10
+
+		.form-control
+			+transition(background ease-in-out 0.2s)
+			background: #fde2e2
+			color: #d9534f
+
+			+input-placeholder
+				color: #d9534f
+
+form.is-submitted
+	.controls
+		display: none
+
+	.mod-share
+		+transition(opacity ease-in-out 0.2s)
+		opacity: 1
+		z-index: 10
+
 .controls
 	position: relative
 	z-index: 10
@@ -59,29 +86,4 @@ input[type="submit"]
 				width: calc(100% - 77px)
 
 
-.form
-	position: relative
-	text-align: center
 
-form.is-failed
-	.controls
-		+transition(opacity ease-in-out 0.2s)
-		opacity: 1
-		z-index: 10
-
-		.form-control
-			+transition(background ease-in-out 0.2s)
-			background: #fde2e2
-			color: #d9534f
-
-			+input-placeholder
-				color: #d9534f
-
-form.is-submitted
-	.controls
-		display: none
-
-	.mod-share
-		+transition(opacity ease-in-out 0.2s)
-		opacity: 1
-		z-index: 10

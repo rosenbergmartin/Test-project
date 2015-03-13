@@ -795,9 +795,10 @@ footer {
   padding-bottom: 75px;
   background-color: #243139;
   color: #fff; }
-  footer h2,
-  footer .form.is-submitted {
+  footer h2 {
     margin-bottom: 40px; }
+  footer .form.is-submitted {
+    margin-bottom: 20px; }
   footer .footer-note {
     margin-top: 40px;
     margin-bottom: 80px;
@@ -1353,6 +1354,43 @@ input[type="submit"] {
   border-radius: 0;
   border: 0; }
 
+.form {
+  position: relative;
+  text-align: center; }
+
+form.is-failed .controls {
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+  z-index: 10; }
+  form.is-failed .controls .form-control {
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+    background: #fde2e2;
+    color: #d9534f; }
+    form.is-failed .controls .form-control::-webkit-input-placeholder {
+      color: #d9534f; }
+    form.is-failed .controls .form-control::-moz-placeholder {
+      color: #d9534f; }
+    form.is-failed .controls .form-control::-ms-input-placeholder {
+      color: #d9534f; }
+    form.is-failed .controls .form-control:-ms-input-placeholder {
+      color: #d9534f; }
+
+form.is-submitted .controls {
+  display: none; }
+form.is-submitted .mod-share {
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+  z-index: 10; }
+
 .controls {
   position: relative;
   z-index: 10; }
@@ -1414,40 +1452,3 @@ input[type="submit"] {
         width: 100%; }
         .controls.control-with-btn .form-control {
           width: calc(100% - 77px); } }
-
-.form {
-  position: relative;
-  text-align: center; }
-
-form.is-failed .controls {
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  opacity: 1;
-  z-index: 10; }
-  form.is-failed .controls .form-control {
-    -moz-transition: background 0.2s ease-in-out;
-    -o-transition: background 0.2s ease-in-out;
-    -webkit-transition: background 0.2s ease-in-out;
-    transition: background 0.2s ease-in-out;
-    background: #fde2e2;
-    color: #d9534f; }
-    form.is-failed .controls .form-control::-webkit-input-placeholder {
-      color: #d9534f; }
-    form.is-failed .controls .form-control::-moz-placeholder {
-      color: #d9534f; }
-    form.is-failed .controls .form-control::-ms-input-placeholder {
-      color: #d9534f; }
-    form.is-failed .controls .form-control:-ms-input-placeholder {
-      color: #d9534f; }
-
-form.is-submitted .controls {
-  display: none; }
-form.is-submitted .mod-share {
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  opacity: 1;
-  z-index: 10; }
