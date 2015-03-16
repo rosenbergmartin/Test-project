@@ -91,18 +91,19 @@ var rosenbergApp = rosenbergApp || {};
 				e.preventDefault();
 				var emailString = $(this).find($appFormEmail).val();
 
+				$(this).find($appFormEmail).bind('input propertychange', function(){
+					$appFormSubmit.removeClass(isFailed);
+				});
+
 				if(validate(emailString)){
 					/// Simulating on mail function
 					emailSend(emailString);
 					$appFormSubmit.addClass(isSubmitted);
 					$(this).removeClass(isFailed);
-					console.log("200");
-					console.log(emailString);
 				}
 				else
 				{
 					$(this).addClass(isFailed);
-					console.log("500");
 				}
 				
 			});
