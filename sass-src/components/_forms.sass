@@ -27,19 +27,18 @@ form.is-failed
 		+transition(opacity ease-in-out 0.2s)
 		opacity: 1
 		z-index: 10
-		font-weight: bold
 
 		.form-control
 			+transition(background ease-in-out 0.2s)
 			color: #dc0808
+			font-weight: bold
 
 			+input-placeholder
 				color: #8d9ea4
+				font-weight: normal
 
 	+at-breakpoint(xs)
 		.controls
-			font-weight: normal
-
 			.form-control
 				background-color: transparent
 				border: 1px solid #fff
