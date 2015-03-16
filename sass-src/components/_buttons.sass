@@ -33,7 +33,7 @@
 	cursor: pointer
 	font-weight: bold
 
-	&:hover
+	.no-touch &:hover
 		+transition(all ease-in-out 0.2s)
 
 	&.btn-large
@@ -52,7 +52,7 @@
 	background-color: $brand-primary
 	color: $brand-text-contrast
 
-	&:hover
+	.no-touch &:hover
 		background-color: $brand-primary-action
 
 	&:active
@@ -64,10 +64,10 @@
 	background-color: $brand-secondary
 	color: $brand-text-contrast
 
-	&:hover
+	.no-touch &:hover
 		background-color: $brand-secondary-action
 
 .btn-special
-	&:hover
+	.no-touch &:hover
 		padding: 16px 33px 13px 30px
 
