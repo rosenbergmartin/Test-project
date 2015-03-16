@@ -1,21 +1,51 @@
+=btn-mini
+	padding: 13px
+	min-height: 40px
+
+=btn-small
+	padding: 14px 32px 11px 32px
+	min-height: 40px
+
+	+at-breakpoint(xs)
+		+btn-mini
+
+=btn-default-xs
+	padding: 13px 10px 12px 10px
+	min-height: 40px
+
+=btn-large
+	padding: 17px 35px 14px 35px
+	min-height: 48px
+
+	+at-breakpoint(xs)
+		+btn-default-xs
+
 =btn-structure
 	+transition(all ease-in-out 0.2s)
 	+box-sizing(border-box)
 	+border-radius($border-radius)
 	display: inline-block
 	font-size: 15px
-	padding: 15px 35px 14px 35px
-	min-height: 45px
+	padding: 16px 35px 13px 35px
+	min-height: 46px
 	line-height: 1em
 	text-decoration: none
 	cursor: pointer
+	font-weight: bold
 
 	&:hover
 		+transition(all ease-in-out 0.2s)
 
+	&.btn-large
+		+btn-large
+
+	&.btn-small
+		+btn-small
+
 	+at-breakpoint(xs)
-		padding: 13px 10px 12px 10px
-		min-height: 40px
+		+btn-default-xs
+		font-size: 14px
+
 
 .btn-primary
 	+btn-structure
@@ -25,6 +55,10 @@
 	&:hover
 		background-color: $brand-primary-action
 
+	&:active
+		background-color: $brand-primary-action-alternate
+
+
 .btn-secondary
 	+btn-structure
 	background-color: $brand-secondary
@@ -33,4 +67,7 @@
 	&:hover
 		background-color: $brand-secondary-action
 
+.btn-special
+	&:hover
+		padding: 16px 33px 13px 30px
 

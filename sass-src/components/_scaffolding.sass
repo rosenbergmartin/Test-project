@@ -31,10 +31,6 @@ header
 	.form.is-submitted
 		margin-bottom: 40px 
 
-	[class^="btn-"],
-	.controls .form-control
-		font-size: 16px
-
 	.controls
 		margin-top: 25px
 
@@ -42,13 +38,14 @@ header
 		min-height: 560px
 		background-position: 20% 100%
 
-		.h3
+		h1.h3
+			margin-bottom: 10px
 			font-size: 21px // :(
 
-		[class^="btn-"],
-		.controls .form-control
-			font-size: 14px
-
+		.mod-share
+			.btn-small
+				padding-top: 15px
+				min-height: 44px
 
 $local-footer-spacing: 40px
 
@@ -126,6 +123,10 @@ footer
 	text-align: center
 
 +at-breakpoint(sm)
+	.content-layout-sm
+		text-align: center
+
++at-breakpoint(md)
 	.content-layout-sm
 		text-align: center
 

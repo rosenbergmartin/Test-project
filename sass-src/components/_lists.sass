@@ -27,6 +27,9 @@
 		background-size: contain
 		background-position: 50% 100%
 		min-height: 210px	
+		margin: 0 auto
+		max-width: 100%
+		width: 100%
 
 	.device-phone-media
 		background-image: url("../images/device-phone@2x.jpg")
@@ -41,21 +44,45 @@
 		margin-top: 50px
 		margin-bottom: 5px
 
+	+at-breakpoint(md)
+
+		li 
+			padding: 0 30px
+
+		.device-phone-media,
+		.device-desktop-media,
+		.device-tablet-media
+			min-height: 200px
+
 	+at-breakpoint(sm)
-		width: $screen-sm
+		li 
+			padding: 0 20px
+
+		.device-phone-media,
+		.device-desktop-media,
+		.device-tablet-media
+			min-height: 180px
+
+	+at-breakpoint(xs)
+		width: 702px
 
 		li
 			width: 234px
 			margin: 0
 			padding-left: 5px
+			padding-right: 5px
 
 		.device-desktop
-			width: 300px
+			padding-left: 10px
+			padding-right: 10px
 
 		.device-phone-media,
 		.device-desktop-media,
 		.device-tablet-media
 			min-height: 180px	
+
+		.list-heading
+			font-size: 16px
 
 .list-features
 	.searching-media,
@@ -76,6 +103,7 @@
 		background-image: url("../images/icon-file@2x.jpg")
 
 	.list-heading
+		color: #060606
 		margin-top: 50px
 		margin-bottom: 20px
 

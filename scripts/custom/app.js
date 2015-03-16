@@ -120,7 +120,7 @@ var rosenbergApp = rosenbergApp || {};
 				$appSections.each(function(index) {
 					if ($(this).position().top <= scrollFromTop + 10 ) {
 
-						if($(document).height() - $(window).height() <= scrollFromTop + 10){
+						if($(document).height() - $(window).height() <= scrollFromTop + 30){
 							index++; //end of document
 						}
 

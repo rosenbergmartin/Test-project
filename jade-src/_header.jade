@@ -5,15 +5,18 @@ header
 
 		form.form(data-form-submit, action="#")
 			div.controls.control-with-btn
-				input.form-control(type="email", name="email", data-form-email, required ,placeholder="Input Email for Beta")
-				input(type="submit", value="Request", data-form-btn).btn-primary
+				input.form-control.form-control-large(type="email", name="email", data-form-email, required ,placeholder="Input Email for Beta")
+				input(type="submit", value="Request", data-form-btn).btn-primary.btn-large
 
 			div.mod-share
-				p.share-note 
+				p.share-note.hidden-xs.visible-sm
 					| You’ve signed up, we love you for that! Tell your friends about it. 
 
-				a.btn-secondary(href="#") Link to Facebook
-				a.btn-primary(href="#") Link to Twitter
+				a.btn-secondary.btn-small(href="http://www.facebook.com/sharer/sharer.php?u=#url", target="_blank") Link to Facebook
+				a.btn-primary.btn-small(href="https://twitter.com/share", target="_blank") Link to Twitter
+
+				p.share-note.visible-xs.hidden-sm
+					| You’ve signed up, we love you for that! Tell your friends about it. 
 
 	div.nav-container(data-nav-primary)
 		nav.nav-primary(role="navigation")
